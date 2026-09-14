@@ -1,38 +1,39 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { UserLocationsService } from '../../services/user-locations.service';
 
 @Component({
   selector: 'app-location-create',
-  imports: [ReactiveFormsModule, RouterLink],
+  imports: [ReactiveFormsModule, RouterLink, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <main>
-      <a class="back-link" routerLink="/locations">← Back to locations</a>
+      <a class="back-link" routerLink="/locations">{{ 'LOCATION_DETAIL.BACK' | translate }}</a>
 
-      <h1>{{ id() ? 'Edit location' : 'New location' }}</h1>
+      <h1>{{ (id() ? 'LOCATION_FORM.TITLE_EDIT' : 'LOCATION_FORM.TITLE_NEW') | translate }}</h1>
 
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="field">
-          <label for="name">Name</label>
+          <label for="name">{{ 'LOCATION_FORM.NAME' | translate }}</label>
           <input id="name" type="text" formControlName="name" required />
         </div>
 
         <div class="field-row">
           <div class="field">
-            <label for="x">X</label>
+            <label for="x">{{ 'LOCATION_FORM.X' | translate }}</label>
             <input id="x" type="number" formControlName="x" />
           </div>
           <div class="field">
-            <label for="y">Y</label>
+            <label for="y">{{ 'LOCATION_FORM.Y' | translate }}</label>
             <input id="y" type="number" formControlName="y" />
           </div>
         </div>
 
         <button type="submit" [disabled]="form.invalid">
-          {{ id() ? 'Save changes' : 'Create location' }}
+          {{ (id() ? 'LOCATION_FORM.SUBMIT_EDIT' : 'LOCATION_FORM.SUBMIT_NEW') | translate }}
         </button>
       </form>
     </main>

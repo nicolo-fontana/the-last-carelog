@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { LocationCard } from '../../components/location-card/location-card';
 import { LocationsService } from '../../services/locations.service';
@@ -14,18 +15,23 @@ interface LocationListItem {
 
 @Component({
   selector: 'app-location-list',
-  imports: [LocationCard, ReactiveFormsModule, RouterLink],
+  imports: [LocationCard, ReactiveFormsModule, RouterLink, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <main>
       <div class="header-row">
-        <h1>Locations</h1>
-        <a class="add-button" routerLink="/locations/new">+ Add location</a>
+        <h1>{{ 'LOCATIONS.TITLE' | translate }}</h1>
+        <a class="add-button" routerLink="/locations/new">{{ 'LOCATIONS.ADD' | translate }}</a>
       </div>
 
       <div class="filter-field">
-        <label for="filter">Filter locations</label>
-        <input id="filter" type="text" placeholder="Search by name…" [formControl]="filterControl" />
+        <label for="filter">{{ 'LOCATIONS.FILTER_LABEL' | translate }}</label>
+        <input
+          id="filter"
+          type="text"
+          [placeholder]="'LOCATIONS.FILTER_PLACEHOLDER' | translate"
+          [formControl]="filterControl"
+        />
       </div>
 
       @if (filteredLocations().length) {
@@ -37,7 +43,9 @@ interface LocationListItem {
           }
         </ul>
       } @else {
-        <p>{{ locations().length ? 'No locations match your filter.' : 'No locations yet.' }}</p>
+        <p>
+          {{ (locations().length ? 'LOCATIONS.EMPTY_FILTERED' : 'LOCATIONS.EMPTY') | translate }}
+        </p>
       }
     </main>
   `,

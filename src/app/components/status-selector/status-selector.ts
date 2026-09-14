@@ -1,24 +1,26 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { LocationStatus } from '../../models/location-progress.dto';
 
 interface StatusOption {
   value: LocationStatus;
-  label: string;
+  translationKey: string;
 }
 
 const STATUS_OPTIONS: StatusOption[] = [
-  { value: 'new', label: 'New' },
-  { value: 'visited', label: 'Visited' },
-  { value: 'completed', label: 'Completed' },
+  { value: 'new', translationKey: 'STATUS.NEW' },
+  { value: 'visited', translationKey: 'STATUS.VISITED' },
+  { value: 'completed', translationKey: 'STATUS.COMPLETED' },
 ];
 
 @Component({
   selector: 'app-status-selector',
+  imports: [TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <fieldset class="status-selector">
-      <legend>Status</legend>
+      <legend>{{ 'STATUS.LABEL' | translate }}</legend>
       @for (option of options; track option.value) {
         <label class="status-option" [class.selected]="option.value === value()">
           <input
@@ -28,7 +30,7 @@ const STATUS_OPTIONS: StatusOption[] = [
             [checked]="option.value === value()"
             (change)="valueChange.emit(option.value)"
           />
-          {{ option.label }}
+          {{ option.translationKey | translate }}
         </label>
       }
     </fieldset>

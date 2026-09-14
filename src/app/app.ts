@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { BottomNav } from './components/bottom-nav/bottom-nav';
+import { LanguageService } from './services/language.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,5 @@ import { BottomNav } from './components/bottom-nav/bottom-nav';
   styleUrl: './app.scss',
 })
 export class App {
+  private readonly languageService = inject(LanguageService);
 }

@@ -1,19 +1,42 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { BackupService } from '../../services/backup.service';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-settings',
+  imports: [TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <main>
-      <h1>Settings</h1>
+      <h1>{{ 'SETTINGS.TITLE' | translate }}</h1>
+
+      <section class="language-section">
+        <h2>{{ 'SETTINGS.LANGUAGE' | translate }}</h2>
+        <div class="language-actions">
+          <button
+            type="button"
+            [class.selected]="languageService.language() === 'en'"
+            (click)="languageService.setLanguage('en')"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            [class.selected]="languageService.language() === 'it'"
+            (click)="languageService.setLanguage('it')"
+          >
+            IT
+          </button>
+        </div>
+      </section>
 
       <section class="backup-section">
-        <h2>Backup</h2>
+        <h2>{{ 'SETTINGS.BACKUP_TITLE' | translate }}</h2>
         <div class="backup-actions">
-          <button type="button" (click)="onExport()">Export data</button>
-          <button type="button" (click)="fileInput.click()">Import data</button>
+          <button type="button" (click)="onExport()">{{ 'SETTINGS.EXPORT' | translate }}</button>
+          <button type="button" (click)="fileInput.click()">{{ 'SETTINGS.IMPORT' | translate }}</button>
           <input
             #fileInput
             type="file"
@@ -22,8 +45,8 @@ import { BackupService } from '../../services/backup.service';
             (change)="onImport($event)"
           />
         </div>
-        @if (statusMessage()) {
-          <p aria-live="polite">{{ statusMessage() }}</p>
+        @if (statusMessageKey()) {
+          <p aria-live="polite">{{ statusMessageKey() | translate }}</p>
         }
       </section>
     </main>
@@ -36,12 +59,14 @@ import { BackupService } from '../../services/backup.service';
       padding: 1rem 1rem 5rem;
     }
 
+    .language-section,
     .backup-section {
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
     }
 
+    .language-actions,
     .backup-actions {
       display: flex;
       gap: 0.75rem;
@@ -57,6 +82,12 @@ import { BackupService } from '../../services/backup.service';
       cursor: pointer;
     }
 
+    button.selected {
+      background: var(--p-primary-color, #2563eb);
+      color: var(--p-primary-contrast-color, #fff);
+      border-color: var(--p-primary-color, #2563eb);
+    }
+
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -68,13 +99,15 @@ import { BackupService } from '../../services/backup.service';
   `,
 })
 export class Settings {
+  protected readonly languageService = inject(LanguageService);
+
   private readonly backupService = inject(BackupService);
 
-  protected readonly statusMessage = signal('');
+  protected readonly statusMessageKey = signal('');
 
   protected onExport(): void {
     this.backupService.exportToFile();
-    this.statusMessage.set('Data exported.');
+    this.statusMessageKey.set('SETTINGS.EXPORTED');
   }
 
   protected async onImport(event: Event): Promise<void> {
@@ -85,6 +118,6 @@ export class Settings {
     }
     await this.backupService.importFromFile(file);
     input.value = '';
-    this.statusMessage.set('Data imported.');
+    this.statusMessageKey.set('SETTINGS.IMPORTED');
   }
 }

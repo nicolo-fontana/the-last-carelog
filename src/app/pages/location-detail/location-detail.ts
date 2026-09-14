@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, input } f
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { StatusSelector } from '../../components/status-selector/status-selector';
 import { LocationStatus } from '../../models/location-progress.dto';
@@ -19,32 +20,34 @@ interface LocationDisplayItem {
 
 @Component({
   selector: 'app-location-detail',
-  imports: [StatusSelector, ReactiveFormsModule, RouterLink],
+  imports: [StatusSelector, ReactiveFormsModule, RouterLink, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (location(); as loc) {
       <main>
-        <a class="back-link" routerLink="/locations">← Back to locations</a>
+        <a class="back-link" routerLink="/locations">{{ 'LOCATION_DETAIL.BACK' | translate }}</a>
 
         <div class="header-row">
           <h1>{{ loc.name }}</h1>
           @if (isUserLocation()) {
-            <a class="edit-link" [routerLink]="['/locations', loc.id, 'edit']">Edit</a>
+            <a class="edit-link" [routerLink]="['/locations', loc.id, 'edit']">
+              {{ 'LOCATION_DETAIL.EDIT' | translate }}
+            </a>
           }
         </div>
 
-        <section class="info-card" aria-label="Location information">
+        <section class="info-card" [attr.aria-label]="'LOCATION_DETAIL.INFO_LABEL' | translate">
           <dl>
             <div>
-              <dt>Category</dt>
+              <dt>{{ 'LOCATION_DETAIL.CATEGORY' | translate }}</dt>
               <dd>{{ categoryName() ?? '—' }}</dd>
             </div>
             <div>
-              <dt>X</dt>
+              <dt>{{ 'LOCATION_DETAIL.X' | translate }}</dt>
               <dd>{{ loc.x ?? '—' }}</dd>
             </div>
             <div>
-              <dt>Y</dt>
+              <dt>{{ 'LOCATION_DETAIL.Y' | translate }}</dt>
               <dd>{{ loc.y ?? '—' }}</dd>
             </div>
           </dl>
@@ -53,7 +56,7 @@ interface LocationDisplayItem {
         <app-status-selector [value]="status()" (valueChange)="onStatusChange($event)" />
 
         <div class="notes-field">
-          <label for="notes">Notes</label>
+          <label for="notes">{{ 'LOCATION_DETAIL.NOTES' | translate }}</label>
           <textarea id="notes" rows="10" [formControl]="notesControl" (blur)="onNotesBlur()"></textarea>
         </div>
       </main>

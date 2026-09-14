@@ -1,16 +1,17 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { LocationProgressService } from '../../services/location-progress.service';
 
 @Component({
   selector: 'app-location-card',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <a class="location-card" [routerLink]="['/location', id()]">
       <h2>{{ name() }}</h2>
-      <span class="status-badge" [class]="status()">{{ status() }}</span>
+      <span class="status-badge" [class]="status()">{{ 'STATUS.' + status().toUpperCase() | translate }}</span>
     </a>
   `,
   styles: `

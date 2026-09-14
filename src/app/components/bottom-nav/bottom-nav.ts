@@ -1,21 +1,22 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-bottom-nav',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <nav aria-label="Primary">
+    <nav [attr.aria-label]="'NAV.PRIMARY' | translate">
       <ul>
         <li>
           <a routerLink="/locations" routerLinkActive="active" ariaCurrentWhenActive="page">
-            Locations
+            {{ 'NAV.LOCATIONS' | translate }}
           </a>
         </li>
         <li>
           <a routerLink="/settings" routerLinkActive="active" ariaCurrentWhenActive="page">
-            Settings
+            {{ 'NAV.SETTINGS' | translate }}
           </a>
         </li>
       </ul>

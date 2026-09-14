@@ -1,15 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <main>
-      <h1>The Last CareLog</h1>
-      <p>Track your locations and keep your care log up to date.</p>
-      <a routerLink="/locations">View locations</a>
+      <h1>{{ 'LANDING.TITLE' | translate }}</h1>
+      <p>{{ 'LANDING.DESCRIPTION' | translate }}</p>
+      <a routerLink="/locations">{{ 'LANDING.VIEW_LOCATIONS' | translate }}</a>
     </main>
   `,
 })
