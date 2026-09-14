@@ -1,0 +1,53 @@
+{
+  "NAV": {
+    "PRIMARY": "Primary",
+    "LOCATIONS": "Locations",
+    "SETTINGS": "Settings"
+  },
+  "LANDING": {
+    "TITLE": "The Last CareLog",
+    "DESCRIPTION": "Track your locations and keep your care log up to date.",
+    "VIEW_LOCATIONS": "View locations"
+  },
+  "LOCATIONS": {
+    "TITLE": "Locations",
+    "ADD": "+ Add location",
+    "FILTER_LABEL": "Filter locations",
+    "FILTER_PLACEHOLDER": "Search by name…",
+    "EMPTY_FILTERED": "No locations match your filter.",
+    "EMPTY": "No locations yet."
+  },
+  "LOCATION_DETAIL": {
+    "BACK": "← Back to locations",
+    "EDIT": "Edit",
+    "INFO_LABEL": "Location information",
+    "CATEGORY": "Category",
+    "X": "X",
+    "Y": "Y",
+    "NOTES": "Notes"
+  },
+  "STATUS": {
+    "LABEL": "Status",
+    "NEW": "New",
+    "VISITED": "Visited",
+    "COMPLETED": "Completed"
+  },
+  "LOCATION_FORM": {
+    "TITLE_NEW": "New location",
+    "TITLE_EDIT": "Edit location",
+    "NAME": "Name",
+    "X": "X",
+    "Y": "Y",
+    "SUBMIT_NEW": "Create location",
+    "SUBMIT_EDIT": "Save changes"
+  },
+  "SETTINGS": {
+    "TITLE": "Settings",
+    "BACKUP_TITLE": "Backup",
+    "EXPORT": "Export data",
+    "IMPORT": "Import data",
+    "EXPORTED": "Data exported.",
+    "IMPORTED": "Data imported.",
+    "LANGUAGE": "Language"
+  }
+}

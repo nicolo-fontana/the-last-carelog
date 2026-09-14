@@ -1,0 +1,53 @@
+{
+  "NAV": {
+    "PRIMARY": "Principale",
+    "LOCATIONS": "Location",
+    "SETTINGS": "Impostazioni"
+  },
+  "LANDING": {
+    "TITLE": "The Last CareLog",
+    "DESCRIPTION": "Tieni traccia delle tue location e aggiorna il tuo diario di cura.",
+    "VIEW_LOCATIONS": "Vai alle location"
+  },
+  "LOCATIONS": {
+    "TITLE": "Location",
+    "ADD": "+ Aggiungi location",
+    "FILTER_LABEL": "Filtra location",
+    "FILTER_PLACEHOLDER": "Cerca per nome…",
+    "EMPTY_FILTERED": "Nessuna location corrisponde al filtro.",
+    "EMPTY": "Nessuna location ancora presente."
+  },
+  "LOCATION_DETAIL": {
+    "BACK": "← Torna alle location",
+    "EDIT": "Modifica",
+    "INFO_LABEL": "Informazioni location",
+    "CATEGORY": "Categoria",
+    "X": "X",
+    "Y": "Y",
+    "NOTES": "Note"
+  },
+  "STATUS": {
+    "LABEL": "Stato",
+    "NEW": "Nuova",
+    "VISITED": "Visitata",
+    "COMPLETED": "Completata"
+  },
+  "LOCATION_FORM": {
+    "TITLE_NEW": "Nuova location",
+    "TITLE_EDIT": "Modifica location",
+    "NAME": "Nome",
+    "X": "X",
+    "Y": "Y",
+    "SUBMIT_NEW": "Crea location",
+    "SUBMIT_EDIT": "Salva modifiche"
+  },
+  "SETTINGS": {
+    "TITLE": "Impostazioni",
+    "BACKUP_TITLE": "Backup",
+    "EXPORT": "Esporta dati",
+    "IMPORT": "Importa dati",
+    "EXPORTED": "Dati esportati.",
+    "IMPORTED": "Dati importati.",
+    "LANGUAGE": "Lingua"
+  }
+}

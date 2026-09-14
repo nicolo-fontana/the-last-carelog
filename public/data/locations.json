@@ -1,0 +1,823 @@
+{
+  "categories": [
+    {
+      "id": "black-vein-station",
+      "name": "Black Vein Station"
+    },
+    {
+      "id": "caves",
+      "name": "Caves"
+    },
+    {
+      "id": "central-warehouse-alpha",
+      "name": "Central Warehouse Alpha"
+    },
+    {
+      "id": "courier-sieve-node-facility",
+      "name": "Courier Sieve Node Facility"
+    },
+    {
+      "id": "exodus-station",
+      "name": "Exodus Station"
+    },
+    {
+      "id": "graves",
+      "name": "Graves"
+    },
+    {
+      "id": "habitat-nodes",
+      "name": "Habitat Nodes"
+    },
+    {
+      "id": "helios-reserves",
+      "name": "Helios Reserves"
+    },
+    {
+      "id": "lazarus-complex",
+      "name": "Lazarus Complex"
+    },
+    {
+      "id": "navigation-beacons",
+      "name": "Navigation Beacons"
+    },
+    {
+      "id": "ndns-nodes",
+      "name": "NDNS Nodes"
+    },
+    {
+      "id": "nomads-tower",
+      "name": "Nomads Tower"
+    },
+    {
+      "id": "platform-omega",
+      "name": "Platform Omega"
+    },
+    {
+      "id": "quarantine-stacks",
+      "name": "Quarantine Stacks"
+    },
+    {
+      "id": "refuel-outposts",
+      "name": "Refuel Outposts"
+    },
+    {
+      "id": "sanctuary-dock",
+      "name": "Sanctuary Dock"
+    },
+    {
+      "id": "seed-reserves",
+      "name": "Seed Reserves"
+    },
+    {
+      "id": "seed-vaults",
+      "name": "Seed Vaults"
+    },
+    {
+      "id": "silos",
+      "name": "Silos"
+    },
+    {
+      "id": "service-towers",
+      "name": "Service Towers"
+    },
+    {
+      "id": "talon-offshore-proving-deck",
+      "name": "Talon Offshore Proving Deck"
+    },
+    {
+      "id": "the-last-listener-station",
+      "name": "The Last Listener Station"
+    },
+    {
+      "id": "the-maze-transposium",
+      "name": "The Maze (Transposium)"
+    },
+    {
+      "id": "unlisted-tower",
+      "name": "Unlisted Tower"
+    }
+  ],
+  "locations": [
+    {
+      "id": "black-vein-station",
+      "name": "Black Vein Station",
+      "category": "black-vein-station",
+      "x": 49,
+      "y": -70
+    },
+    {
+      "id": "deep-silence",
+      "name": "Deep Silence",
+      "category": "caves",
+      "x": 49,
+      "y": -20
+    },
+    {
+      "id": "far-horizon",
+      "name": "Far Horizon",
+      "category": "caves",
+      "x": 133,
+      "y": 54
+    },
+    {
+      "id": "first-whisper",
+      "name": "First Whisper",
+      "category": "caves",
+      "x": 9,
+      "y": 6
+    },
+    {
+      "id": "grey-mouth",
+      "name": "Grey Mouth",
+      "category": "caves",
+      "x": 110,
+      "y": 4
+    },
+    {
+      "id": "north-lantern",
+      "name": "North Lantern",
+      "category": "caves",
+      "x": 55,
+      "y": -82
+    },
+    {
+      "id": "south-echo",
+      "name": "South Echo",
+      "category": "caves",
+      "x": 73,
+      "y": 38
+    },
+    {
+      "id": "twin-tide",
+      "name": "Twin Tide",
+      "category": "caves",
+      "x": 110,
+      "y": 27
+    },
+    {
+      "id": "the-fourth-chamber",
+      "name": "The Fourth Chamber",
+      "category": "caves",
+      "x": 109,
+      "y": -34
+    },
+    {
+      "id": "unnamed-cave",
+      "name": "Unnamed Cave",
+      "category": "caves",
+      "x": 80,
+      "y": 4
+    },
+    {
+      "id": "central-warehouse-alpha",
+      "name": "Central Warehouse Alpha",
+      "category": "central-warehouse-alpha",
+      "x": 66,
+      "y": 22
+    },
+    {
+      "id": "courier-sieve-node-facility",
+      "name": "Courier Sieve Node Facility",
+      "category": "courier-sieve-node-facility",
+      "x": 169,
+      "y": -2
+    },
+    {
+      "id": "exodus-station",
+      "name": "Exodus Station",
+      "category": "exodus-station",
+      "x": 125,
+      "y": 48
+    },
+    {
+      "id": "brighton-grave",
+      "name": "Brighton Grave",
+      "category": "graves",
+      "x": 57,
+      "y": -14
+    },
+    {
+      "id": "dover-grave",
+      "name": "Dover Grave",
+      "category": "graves",
+      "x": 136,
+      "y": 35
+    },
+    {
+      "id": "hampton-grave",
+      "name": "Hampton Grave",
+      "category": "graves",
+      "x": 102,
+      "y": 19
+    },
+    {
+      "id": "lincoln-grave",
+      "name": "Lincoln Grave",
+      "category": "graves",
+      "x": 80,
+      "y": 4
+    },
+    {
+      "id": "norfolk-grave",
+      "name": "Norfolk Grave",
+      "category": "graves",
+      "x": 59,
+      "y": -41
+    },
+    {
+      "id": "salem-grave",
+      "name": "Salem Grave",
+      "category": "graves",
+      "x": 108,
+      "y": 54
+    },
+    {
+      "id": "winston-grave",
+      "name": "Winston Grave",
+      "category": "graves",
+      "x": 27,
+      "y": -12
+    },
+    {
+      "id": "york-grave",
+      "name": "York Grave",
+      "category": "graves",
+      "x": 85,
+      "y": -75
+    },
+    {
+      "id": "habitat-node-01-2-5",
+      "name": "Habitat Node 01-2.5",
+      "category": "habitat-nodes",
+      "x": 68,
+      "y": -78
+    },
+    {
+      "id": "habitat-node-02-23",
+      "name": "Habitat Node 02-23",
+      "category": "habitat-nodes",
+      "x": 48,
+      "y": -48
+    },
+    {
+      "id": "habitat-node-03-12-3",
+      "name": "Habitat Node 03-12.3",
+      "category": "habitat-nodes",
+      "x": 98,
+      "y": 16
+    },
+    {
+      "id": "habitat-node-04-7",
+      "name": "Habitat Node 04-7",
+      "category": "habitat-nodes",
+      "x": 82,
+      "y": -15
+    },
+    {
+      "id": "habitat-node-05-14-5",
+      "name": "Habitat Node 05-14.5",
+      "category": "habitat-nodes",
+      "x": 90,
+      "y": -56
+    },
+    {
+      "id": "habitat-node-06-3-5",
+      "name": "Habitat Node 06-3.5",
+      "category": "habitat-nodes",
+      "x": 23,
+      "y": 4
+    },
+    {
+      "id": "habitat-node-08-16",
+      "name": "Habitat Node 08-16",
+      "category": "habitat-nodes",
+      "x": 130,
+      "y": 21
+    },
+    {
+      "id": "habitat-node-09-4",
+      "name": "Habitat Node 09-4",
+      "category": "habitat-nodes",
+      "x": 82,
+      "y": 17
+    },
+    {
+      "id": "habitat-node-10-4",
+      "name": "Habitat Node 10-4",
+      "category": "habitat-nodes",
+      "x": 30,
+      "y": -31
+    },
+    {
+      "id": "habitat-node-14-7",
+      "name": "Habitat Node 14-7",
+      "category": "habitat-nodes",
+      "x": 104,
+      "y": 50
+    },
+    {
+      "id": "habitat-node-38-98",
+      "name": "Habitat Node 38-98",
+      "category": "habitat-nodes",
+      "x": 8,
+      "y": -38
+    },
+    {
+      "id": "helios-reserve-draco",
+      "name": "Helios Reserve Draco",
+      "category": "helios-reserves",
+      "x": 62,
+      "y": -62
+    },
+    {
+      "id": "helios-reserve-gemini",
+      "name": "Helios Reserve Gemini",
+      "category": "helios-reserves",
+      "x": 60,
+      "y": -26
+    },
+    {
+      "id": "helios-reserve-lyra",
+      "name": "Helios Reserve Lyra",
+      "category": "helios-reserves",
+      "x": 120,
+      "y": 28
+    },
+    {
+      "id": "helios-reserve-orion",
+      "name": "Helios Reserve Orion",
+      "category": "helios-reserves",
+      "x": 53,
+      "y": 10
+    },
+    {
+      "id": "lazarus-complex",
+      "name": "Lazarus Complex",
+      "category": "lazarus-complex",
+      "x": 69,
+      "y": -2
+    },
+    {
+      "id": "navigation-beacon-15",
+      "name": "Navigation Beacon 15",
+      "category": "navigation-beacons",
+      "x": 69,
+      "y": -53
+    },
+    {
+      "id": "navigation-beacon-32",
+      "name": "Navigation Beacon 32",
+      "category": "navigation-beacons",
+      "x": 109,
+      "y": 35
+    },
+    {
+      "id": "navigation-beacon-49",
+      "name": "Navigation Beacon 49",
+      "category": "navigation-beacons",
+      "x": 33,
+      "y": 6
+    },
+    {
+      "id": "ndns-node-70-142",
+      "name": "NDNS Node 70, -142",
+      "category": "ndns-nodes",
+      "x": 70,
+      "y": -142
+    },
+    {
+      "id": "ndns-node-70-82",
+      "name": "NDNS Node 70, -82",
+      "category": "ndns-nodes",
+      "x": 70,
+      "y": -82
+    },
+    {
+      "id": "ndns-node-70-42",
+      "name": "NDNS Node 70, -42",
+      "category": "ndns-nodes",
+      "x": 69,
+      "y": -42
+    },
+    {
+      "id": "ndns-node-70-17",
+      "name": "NDNS Node 70, -17",
+      "category": "ndns-nodes",
+      "x": 69,
+      "y": -17
+    },
+    {
+      "id": "ndns-node-70-14",
+      "name": "NDNS Node 70, 14",
+      "category": "ndns-nodes",
+      "x": 70,
+      "y": 14
+    },
+    {
+      "id": "ndns-node-10-2",
+      "name": "NDNS Node -10, -2",
+      "category": "ndns-nodes",
+      "x": -10,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-29-2",
+      "name": "NDNS Node 29, -2",
+      "category": "ndns-nodes",
+      "x": 29,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-55-2",
+      "name": "NDNS Node 55, -2",
+      "category": "ndns-nodes",
+      "x": 55,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-84-2",
+      "name": "NDNS Node 84, -2",
+      "category": "ndns-nodes",
+      "x": 84,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-110-2",
+      "name": "NDNS Node 110, -2",
+      "category": "ndns-nodes",
+      "x": 110,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-150-2",
+      "name": "NDNS Node 150, -2",
+      "category": "ndns-nodes",
+      "x": 150,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-210-2",
+      "name": "NDNS Node 210, -2",
+      "category": "ndns-nodes",
+      "x": 210,
+      "y": -2
+    },
+    {
+      "id": "ndns-node-70-38",
+      "name": "NDNS Node 70, 38",
+      "category": "ndns-nodes",
+      "x": 70,
+      "y": 38
+    },
+    {
+      "id": "ndns-node-70-78",
+      "name": "NDNS Node 70, 78",
+      "category": "ndns-nodes",
+      "x": 70,
+      "y": 78
+    },
+    {
+      "id": "ndns-node-70-138",
+      "name": "NDNS Node 70, 138",
+      "category": "ndns-nodes",
+      "x": 70,
+      "y": 138
+    },
+    {
+      "id": "ndns-node-70-2",
+      "name": "NDNS Node -70, -2",
+      "category": "ndns-nodes",
+      "x": -70,
+      "y": -2
+    },
+    {
+      "id": "nomads-tower",
+      "name": "Nomads Tower",
+      "category": "nomads-tower",
+      "x": 74,
+      "y": -31
+    },
+    {
+      "id": "platform-omega",
+      "name": "Platform Omega",
+      "category": "platform-omega",
+      "x": 90,
+      "y": 6
+    },
+    {
+      "id": "quarantine-stack-amen",
+      "name": "Quarantine Stack Amen",
+      "category": "quarantine-stacks",
+      "x": 146,
+      "y": -38
+    },
+    {
+      "id": "quarantine-stack-aurora",
+      "name": "Quarantine Stack Aurora",
+      "category": "quarantine-stacks",
+      "x": 159,
+      "y": -38
+    },
+    {
+      "id": "quarantine-stack-chorus",
+      "name": "Quarantine Stack Chorus",
+      "category": "quarantine-stacks",
+      "x": 145,
+      "y": -32
+    },
+    {
+      "id": "quarantine-stack-dawn",
+      "name": "Quarantine Stack Dawn",
+      "category": "quarantine-stacks",
+      "x": 149,
+      "y": -46
+    },
+    {
+      "id": "refuel-outpost-delta",
+      "name": "Refuel Outpost Delta",
+      "category": "refuel-outposts",
+      "x": 91,
+      "y": 38
+    },
+    {
+      "id": "refuel-outpost-gamma",
+      "name": "Refuel Outpost Gamma",
+      "category": "refuel-outposts",
+      "x": 47,
+      "y": -7
+    },
+    {
+      "id": "refuel-outpost-theta",
+      "name": "Refuel Outpost Theta",
+      "category": "refuel-outposts",
+      "x": 84,
+      "y": -45
+    },
+    {
+      "id": "sanctuary-dock-12",
+      "name": "Sanctuary Dock 12",
+      "category": "sanctuary-dock",
+      "x": 88,
+      "y": 27
+    },
+    {
+      "id": "sanctuary-dock-37",
+      "name": "Sanctuary Dock 37",
+      "category": "sanctuary-dock",
+      "x": 11,
+      "y": 8
+    },
+    {
+      "id": "seed-reserve-01",
+      "name": "Seed Reserve 01",
+      "category": "seed-reserves",
+      "x": 59,
+      "y": 10
+    },
+    {
+      "id": "seed-reserve-02",
+      "name": "Seed Reserve 02",
+      "category": "seed-reserves",
+      "x": 28,
+      "y": -12
+    },
+    {
+      "id": "seed-reserve-03",
+      "name": "Seed Reserve 03",
+      "category": "seed-reserves",
+      "x": 118,
+      "y": 13
+    },
+    {
+      "id": "seed-reserve-04",
+      "name": "Seed Reserve 04",
+      "category": "seed-reserves",
+      "x": 57,
+      "y": -14
+    },
+    {
+      "id": "seed-reserve-05",
+      "name": "Seed Reserve 05",
+      "category": "seed-reserves",
+      "x": 80,
+      "y": -52
+    },
+    {
+      "id": "seed-reserve-06",
+      "name": "Seed Reserve 06",
+      "category": "seed-reserves",
+      "x": 99,
+      "y": -9
+    },
+    {
+      "id": "seed-reserve-07",
+      "name": "Seed Reserve 07",
+      "category": "seed-reserves",
+      "x": 110,
+      "y": 53
+    },
+    {
+      "id": "seed-reserve-08",
+      "name": "Seed Reserve 08",
+      "category": "seed-reserves",
+      "x": 57,
+      "y": -41
+    },
+    {
+      "id": "seed-reserve-09",
+      "name": "Seed Reserve 09",
+      "category": "seed-reserves",
+      "x": 14,
+      "y": 15
+    },
+    {
+      "id": "seed-reserve-10",
+      "name": "Seed Reserve 10",
+      "category": "seed-reserves",
+      "x": 90,
+      "y": 51
+    },
+    {
+      "id": "seed-reserve-11",
+      "name": "Seed Reserve 11",
+      "category": "seed-reserves",
+      "x": 70,
+      "y": -68
+    },
+    {
+      "id": "seed-reserve-12",
+      "name": "Seed Reserve 12",
+      "category": "seed-reserves",
+      "x": 79,
+      "y": -6
+    },
+    {
+      "id": "seed-reserve-13",
+      "name": "Seed Reserve 13",
+      "category": "seed-reserves",
+      "x": 52,
+      "y": -56
+    },
+    {
+      "id": "seed-reserve-14",
+      "name": "Seed Reserve 14",
+      "category": "seed-reserves",
+      "x": 39,
+      "y": 17
+    },
+    {
+      "id": "seed-reserve-15",
+      "name": "Seed Reserve 15",
+      "category": "seed-reserves",
+      "x": 95,
+      "y": 30
+    },
+    {
+      "id": "seed-reserve-16",
+      "name": "Seed Reserve 16",
+      "category": "seed-reserves",
+      "x": 87,
+      "y": -36
+    },
+    {
+      "id": "seed-reserve-17",
+      "name": "Seed Reserve 17",
+      "category": "seed-reserves",
+      "x": 42,
+      "y": -29
+    },
+    {
+      "id": "seed-reserve-18",
+      "name": "Seed Reserve 18",
+      "category": "seed-reserves",
+      "x": 93,
+      "y": -79
+    },
+    {
+      "id": "seed-reserve-19",
+      "name": "Seed Reserve 19",
+      "category": "seed-reserves",
+      "x": 66,
+      "y": 32
+    },
+    {
+      "id": "seed-reserve-20",
+      "name": "Seed Reserve 20",
+      "category": "seed-reserves",
+      "x": 125,
+      "y": 35
+    },
+    {
+      "id": "seed-vault-prometheus",
+      "name": "Seed Vault Prometheus",
+      "category": "seed-vaults",
+      "x": 82,
+      "y": -65
+    },
+    {
+      "id": "eden-cradle",
+      "name": "Eden Cradle",
+      "category": "seed-vaults",
+      "x": 167,
+      "y": 34
+    },
+    {
+      "id": "mcv-17-dead-breath",
+      "name": "MCV-17 Dead Breath",
+      "category": "silos",
+      "x": 74,
+      "y": -74
+    },
+    {
+      "id": "mcv-12-eternal-flame",
+      "name": "MCV-12 Eternal Flame",
+      "category": "silos",
+      "x": 89,
+      "y": 47
+    },
+    {
+      "id": "sgs-e-81-6660",
+      "name": "SGS-E-81-6660",
+      "category": "service-towers",
+      "x": 135,
+      "y": -15
+    },
+    {
+      "id": "sgs-ne-114-1510",
+      "name": "SGS-NE-114-1510",
+      "category": "service-towers",
+      "x": 78,
+      "y": -15
+    },
+    {
+      "id": "sgs-ne-115-4600",
+      "name": "SGS-NE-115-4600",
+      "category": "service-towers",
+      "x": 91,
+      "y": -43
+    },
+    {
+      "id": "sgs-nw-115-5100",
+      "name": "SGS-NW-115-5100",
+      "category": "service-towers",
+      "x": 62,
+      "y": -52
+    },
+    {
+      "id": "sgs-nw-150-6850",
+      "name": "SGS-NW-150-6850",
+      "category": "service-towers",
+      "x": 16,
+      "y": -44
+    },
+    {
+      "id": "sgs-s-150-6300",
+      "name": "SGS-S-150-6300",
+      "category": "service-towers",
+      "x": 81,
+      "y": 60
+    },
+    {
+      "id": "sgs-se-145-6950",
+      "name": "SGS-SE-145-6950",
+      "category": "service-towers",
+      "x": 131,
+      "y": 30
+    },
+    {
+      "id": "sgs-sw-115-3255",
+      "name": "SGS-SW-115-3255",
+      "category": "service-towers",
+      "x": 42,
+      "y": 15
+    },
+    {
+      "id": "talon-offshore-proving-deck",
+      "name": "Talon Offshore Proving Deck",
+      "category": "talon-offshore-proving-deck",
+      "x": 97,
+      "y": 58
+    },
+    {
+      "id": "the-last-listener-station",
+      "name": "The Last Listener Station",
+      "category": "the-last-listener-station",
+      "x": 115,
+      "y": 11
+    },
+    {
+      "id": "the-maze-transposium",
+      "name": "The Maze (Transposium)",
+      "category": "the-maze-transposium",
+      "x": 111,
+      "y": 22
+    },
+    {
+      "id": "unlisted-tower",
+      "name": "Unlisted Tower",
+      "category": "unlisted-tower",
+      "x": 112,
+      "y": -21
+    }
+  ]
+}
